@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Space Race Analysis</title>
+    <!-- Include Plotly.js library -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="stylesheet" href="./static/style.css">
+</head>
+<body>
+    <h1>The Great Space Race</h1>
+    <!-- Render the Plotly chart using the plotly_html variable -->
+    <div class="container">
+        <div class="bar-future">{{ plotly_html | safe }}</div>
+
+        <div class="pie-future"><div class="cover"></div>{{ plotly_html2 | safe}}</div>
+
+        <div class="bar-future-past">{{ plotly_html3 | safe}}</div>
+
+        <div class="pie-past"><div class="cover"></div>{{ plotly_html4 | safe}}</div>
+
+        <div class="scatter-future">{{ plotly_html5 | safe}}</div>
+    </div>
+    </div>
+</body>
+</html>
